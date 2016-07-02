@@ -19,7 +19,6 @@ apt-get install google-cloud-sdk
 echo "Installing Cloud Foundry CLI"	
 dpkg -i /vagrant/cf-cli-installer_6.20.0_x86-64.deb
 echo "Get GitHub repositories"
-#mkdir /vagrant/projects
 git clone https://github.com/smichard/ScaleioOnGCE.git /vagrant/projects/ScaleioOnGCE
 git clone https://github.com/smichard/CloudFoundryDemo.git /vagrant/projects/CloudFoundryDemo
 git clone https://github.com/smichard/neutrinoDemo.git /vagrant/projects/neutrinoDemo
