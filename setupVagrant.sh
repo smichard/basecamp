@@ -16,10 +16,8 @@ echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 apt-get update
 apt-get install google-cloud-sdk
-echo "Installing Cloud Foundry CLI"	
-dpkg -i /vagrant/cf-cli-installer_6.20.0_x86-64.deb
 # installing PCF CLI
-if [ -f "/vagrant/cf-cli-installer_6.20.0_x86-64.deb"]
+if [ -f "/vagrant/cf-cli-installer_6.20.0_x86-64.deb" ]
 then
   echo "Installing Cloud Foundry CLI"
   dpkg -i /vagrant/cf-cli-installer_6.20.0_x86-64.deb
@@ -27,7 +25,7 @@ else
   echo "Cloud Foundry CLI not found"
 fi
 # installing PCF Dev
-if [ -f "/vagrant/"]
+if [ -f "/vagrant/" ]
 then
   echo "Installing Cloud Foundry Dev"
   dpkg -i /vagrant/e  et
