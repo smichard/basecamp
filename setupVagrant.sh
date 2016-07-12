@@ -18,6 +18,22 @@ apt-get update
 apt-get install google-cloud-sdk
 echo "Installing Cloud Foundry CLI"	
 dpkg -i /vagrant/cf-cli-installer_6.20.0_x86-64.deb
+# installing PCF CLI
+if [ -f "/vagrant/cf-cli-installer_6.20.0_x86-64.deb"]
+then
+  echo "Installing Cloud Foundry CLI"
+  dpkg -i /vagrant/cf-cli-installer_6.20.0_x86-64.deb
+else
+  echo "Cloud Foundry CLI not found"
+fi
+# installing PCF Dev
+if [ -f "/vagrant/"]
+then
+  echo "Installing Cloud Foundry Dev"
+  dpkg -i /vagrant/e  et
+else
+  echo "Cloud Foundry Dev not found"
+fi
 echo "Get GitHub repositories"
 git clone https://github.com/smichard/ScaleioOnGCE.git /vagrant/projects/ScaleioOnGCE
 git clone https://github.com/smichard/CloudFoundryDemo.git /vagrant/projects/CloudFoundryDemo

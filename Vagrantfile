@@ -50,7 +50,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
 	vb.gui = false
 	vb.name = "basecamp"
-    vb.memory = 1024
+    vb.memory = 6144
     vb.cpus = 1
   end
   #
