@@ -24,14 +24,6 @@ then
 else
   echo "Cloud Foundry CLI not found"
 fi
-# installing PCF Dev
-if [ -f "/vagrant/" ]
-then
-  echo "Installing Cloud Foundry Dev"
-  dpkg -i /vagrant/e  et
-else
-  echo "Cloud Foundry Dev not found"
-fi
 echo "Get GitHub repositories"
 git clone https://github.com/smichard/ScaleioOnGCE.git /vagrant/projects/ScaleioOnGCE
 git clone https://github.com/smichard/CloudFoundryDemo.git /vagrant/projects/CloudFoundryDemo
